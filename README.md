@@ -18,20 +18,20 @@ php სკრიპტი უნდა დასვათ cron ჯობზე:
 .git/config - ის მაგალითი
 
 [core]
-        repositoryformatversion = 0
-        filemode = true
-        bare = false
-        logallrefupdates = true
-[remote "origin"]
-        url = გითის ssh მისამართი
-        fetch = +refs/heads/*:refs/remotes/origin/*
-[branch "master"]
-        remote = origin
-        merge = refs/heads/master
-[user]
-        name =  gitora
-        email = gitora@domain.com
-
+        repositoryformatversion = 0 
+        filemode = true 
+        bare = false 
+        logallrefupdates = true 
+[remote "origin"] 
+        url = გითის ssh მისამართი 
+        fetch = +refs/heads/*:refs/remotes/origin/* 
+[branch "master"] 
+        remote = origin 
+        merge = refs/heads/master  
+[user] 
+        name =  ora2git 
+        email = ora2git@domain.com 
+ 
 ----------------------------------------------------------------------------------
 
 ასევე დაგჭირდებათ ssh key -ის გენერირება აპაჩისთვის...
