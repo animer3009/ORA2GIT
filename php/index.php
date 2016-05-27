@@ -13,6 +13,7 @@ fclose($lock_file);
 
 function my_die($lock_file_name, $msg) {
     unlink($lock_file_name);
+    oci_close();
     die($msg);
 }
 
