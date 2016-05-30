@@ -8,7 +8,7 @@ DECLARE
                                                                      'OS_USER');
 BEGIN
 
-  if v_os_user <> 'oracle' then
+  if v_os_user not in ('oracle', 'apache', 'root', 'www-data') then
     begin
       select sys.get_ddl_source(decode(ora_dict_obj_type,
                                        'DATABASE LINK',
